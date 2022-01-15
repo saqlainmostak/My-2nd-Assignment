@@ -1,0 +1,135 @@
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+h3{
+    word-wrap: wrap;
+}
+.color{
+    color: darkolivegreen;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.button-color{
+    background-color: orangered;
+    border: 2px solid;
+    border-radius: 5px;
+    text-decoration: none;
+}
+main{
+   
+    justify-content: center;
+}
+.container{
+    width: 870px;
+   
+    background-color: #ffffff;
+    padding: 30px;
+    padding-left: 85px;
+
+}
+.camera-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+body{
+    margin-left: 200px;
+    background-color: #e5e5e5;
+}
+.camera-part-one img{
+    width: 400px;
+}
+ .camera-part-one:hover img{
+    transform: rotate(360deg);
+    transition: transform 3s;
+
+}
+.title{
+    text-align: center;
+}
+/* .................
+styles of courses.
+............... */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.course{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 40px grey;
+}
+ .course .course-photo img{
+    width: 220px;
+    height: 180px;
+
+}
+.course-detail .fa-star{
+    color: #FFC014;
+}
+.course-detail{
+    display: flex;
+    align-items: center;
+  
+}
+.button-two{
+    text-align: right;
+}
+/* third part */
+ .camera-two img{
+    width: 400px;
+
+}
+.third-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+   
+    
+}
+.footer-color{
+
+    background-color: brown;
+  
+    margin-bottom: 0px;
+}
+/* media queries */
+/* mobile */
+@media only screen and (max-width:576px){
+    .container{
+        width: 100%;
+
+    }
+    .camera-part, .third-part, .courses{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .camera-part-one, .camera-two, .course{
+        flex-direction: column;
+    }
+
+}
+/* tablet devices */
+@media  only screen and (min-width: 588px) and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .camera-part,  .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .third-part{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+}
+
+    
